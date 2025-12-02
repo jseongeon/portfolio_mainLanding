@@ -348,10 +348,10 @@ function BrandingListDesktop() {
             Strategic Planning
           </p>
           <div className="leading-[1.21] min-w-full relative shrink-0 text-[16px] text-[#767676] tracking-[-0.7px] w-full flex flex-col gap-y-[4px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal" style={{ fontVariationSettings: "'wdth' 100" }}>Current State Analysis</span>
-            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Vision & Goal Setting</span>
-            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Action Plan & Resource Allocation</span>
-            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Performance Monitoring & Review</span>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal" style={{ fontVariationSettings: "'wdth' 100" }}>Status Analysis</span>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Goal Setting</span>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Resource Planning</span>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Performance Review</span>
           </div>
         </div>
       </div>
@@ -368,10 +368,70 @@ function ProblemSolvingListDesktop() {
             Problem Solving
           </p>
           <div className="leading-[1.21] min-w-full relative shrink-0 text-[16px] text-[#767676] tracking-[-0.7px] w-full flex flex-col gap-y-[4px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal" style={{ fontVariationSettings: "'wdth' 100" }}>Define & Analyze</span>
-            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Ideation & Solution Development</span>
-            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Execution & Implementation</span>
-            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Verification & Sustainment</span>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal" style={{ fontVariationSettings: "'wdth' 100" }}>Problem Definition</span>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Solution Design</span>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Implementation</span>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Result Verification</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function DataDrivenDecisionMakingListDesktop() {
+  return (
+    <div className="relative shrink-0 w-full" data-name="Data-driven decision making list">
+      <div className="max-w-inherit min-w-inherit size-full">
+        <div className="box-border content-stretch flex flex-col font-['Instrument_Sans:Regular',sans-serif] font-normal gap-[20px] items-start max-w-inherit min-w-inherit pl-0 pr-0 py-0 relative w-full">
+          <p className="leading-[1.1] relative shrink-0 text-black text-[32px] text-nowrap tracking-[-0.48px] whitespace-pre font-semibold" style={{ fontVariationSettings: "'wdth' 100" }}>
+            Data-Driven Decisions
+          </p>
+          <div className="leading-[1.21] min-w-full relative shrink-0 text-[16px] text-[#767676] tracking-[-0.7px] w-full flex flex-col gap-y-[4px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal" style={{ fontVariationSettings: "'wdth' 100" }}>KPI Setup</span>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Data Analysis</span>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Hypothesis Testing</span>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Action Planning</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function HRManagementListDesktop() {
+  return (
+    <div className="relative shrink-0 w-full" data-name="HR Management list">
+      <div className="max-w-inherit min-w-inherit size-full">
+        <div className="box-border content-stretch flex flex-col font-['Instrument_Sans:Regular',sans-serif] font-normal gap-[20px] items-start max-w-inherit min-w-inherit pl-0 pr-0 py-0 relative w-full">
+          <p className="leading-[1.1] relative shrink-0 text-black text-[32px] text-nowrap tracking-[-0.48px] whitespace-pre font-semibold" style={{ fontVariationSettings: "'wdth' 100" }}>
+            HR Management
+          </p>
+          <div className="leading-[1.21] min-w-full relative shrink-0 text-[16px] text-[#767676] tracking-[-0.7px] w-full flex flex-col gap-y-[4px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal" style={{ fontVariationSettings: "'wdth' 100" }}>Organizational Design</span>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Talent Development</span>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Performance Mgmt</span>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Culture Building</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function ProjectCoordinationListDesktop() {
+  return (
+    <div className="relative shrink-0 w-full" data-name="Project Coordination list">
+      <div className="max-w-inherit min-w-inherit size-full">
+        <div className="box-border content-stretch flex flex-col font-['Instrument_Sans:Regular',sans-serif] font-normal gap-[20px] items-start max-w-inherit min-w-inherit pl-0 pr-0 py-0 relative w-full">
+          <p className="leading-[1.1] relative shrink-0 text-black text-[32px] text-nowrap tracking-[-0.48px] whitespace-pre font-semibold" style={{ fontVariationSettings: "'wdth' 100" }}>
+            Project Coordination
+          </p>
+          <div className="leading-[1.21] min-w-full relative shrink-0 text-[16px] text-[#767676] tracking-[-0.7px] w-full flex flex-col gap-y-[4px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal" style={{ fontVariationSettings: "'wdth' 100" }}>Timeline Control</span>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Stakeholder Mgmt</span>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Resource Control</span>
+            <span className="font-['Instrument_Sans:Regular',sans-serif] font-normal">Risk Mitigation</span>
           </div>
         </div>
       </div>
@@ -396,9 +456,12 @@ function LinkContainDesktop() {
 
 function StatsBodyDesktop() {
   return (
-    <div className="basis-0 content-start grid grid-cols-2 gap-y-[32px] grow items-start max-w-[1200px] min-h-px min-w-px relative shrink-0" style={{ columnGap: '50px' }} data-name="Stats body">
+    <div className="basis-0 content-start grid grid-cols-3 gap-y-[32px] grow items-start max-w-[1200px] min-h-px min-w-px relative shrink-0" style={{ columnGap: '3px' }} data-name="Stats body">
       <BrandingListDesktop />
       <ProblemSolvingListDesktop />
+      <DataDrivenDecisionMakingListDesktop />
+      <HRManagementListDesktop />
+      <ProjectCoordinationListDesktop />
     </div>
   );
 }
@@ -427,6 +490,48 @@ function StatsSectionDesktop() {
             </div>
           </div>
           <StatsContentDesktop />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function NewBodyDesktop() {
+  return (
+    <div className="basis-0 content-start grid grid-cols-3 gap-y-[32px] grow items-start max-w-[1200px] min-h-px min-w-px relative shrink-0" style={{ columnGap: '3px' }} data-name="New body">
+      <BrandingListDesktop />
+      <ProblemSolvingListDesktop />
+      <DataDrivenDecisionMakingListDesktop />
+      <HRManagementListDesktop />
+      <ProjectCoordinationListDesktop />
+    </div>
+  );
+}
+
+function NewContentDesktop() {
+  return (
+    <div className="content-stretch flex items-start relative shrink-0 w-full" data-name="New content">
+      <p className="basis-0 font-['Instrument_Sans:Regular',sans-serif] font-normal grow leading-none max-w-[633px] min-h-px min-w-px relative shrink-0 text-[64px] text-black tracking-[-3.2px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+        New Section
+      </p>
+      <NewBodyDesktop />
+    </div>
+  );
+}
+
+function NewSectionDesktop() {
+  return (
+    <div className="relative size-full" data-name="New section">
+      <div className="flex flex-col items-center max-w-inherit size-full">
+        <div className="box-border content-stretch flex flex-col gap-[30px] items-center max-w-inherit pb-[100px] pt-[67px] px-[15px] relative size-full">
+          <div className="h-0 relative shrink-0 w-full" data-name="Divider">
+            <div className="absolute bottom-[-0.5px] left-0 right-0 top-[-0.5px]">
+              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1250 1">
+                <path d="M0 0.5H1250" id="Divider" stroke="var(--stroke-0, black)" />
+              </svg>
+            </div>
+          </div>
+          <NewContentDesktop />
         </div>
       </div>
     </div>
@@ -2698,6 +2803,7 @@ function App() {
       <NavHeader />
       <IntroSection />
       <StatsSection />
+      <NewSectionDesktop />
       <StatsContent />
       <AwardsSection />
       <OurTeamSection />
