@@ -496,14 +496,58 @@ function StatsSectionDesktop() {
   );
 }
 
+// Tech & Tools 아이콘 데이터
+const techTools = [
+  // Row 1
+  { name: 'SQL', icon: 'https://github.com/user-attachments/assets/db840114-5b75-49e8-9644-e91342b64f27' },
+  { name: 'MySQL', icon: 'https://github.com/user-attachments/assets/1c1f5be7-3193-4f10-a1ae-8742d3cc85bb' },
+  { name: 'GA', icon: 'https://github.com/user-attachments/assets/0d22a15c-01d3-4cca-8e58-77185d6b3b5b' },
+  { name: 'Google Sheets', icon: 'https://github.com/user-attachments/assets/8c8d1bb5-b450-4c52-8d51-c6bf686afd83' },
+  // Row 2
+  { name: 'HTML', icon: 'https://github.com/user-attachments/assets/9f25a30f-5bf8-4521-a567-9fa448256e1b' },
+  { name: 'CSS', icon: 'https://github.com/user-attachments/assets/f64f6758-bbcb-424e-819a-41011d3bd95c' },
+  { name: 'JavaScript', icon: 'https://github.com/user-attachments/assets/a7fe848e-3b17-4c29-8228-a2513afd83eb' },
+  { name: 'Python', icon: 'https://github.com/user-attachments/assets/a26c4591-c527-480b-9ba3-0d1679b46915' },
+  // Row 3
+  { name: 'Notion', icon: 'https://github.com/user-attachments/assets/43d27059-dd13-45e1-adf0-3445ef0a8448' },
+  { name: 'Figma', icon: 'https://github.com/user-attachments/assets/4b600ecd-49b1-408e-ad26-55f1d0c8abda' },
+  { name: 'GPT', icon: 'https://github.com/user-attachments/assets/3010b613-94e7-453d-8b1a-d089fe362e61' },
+  { name: 'Claude', icon: 'https://github.com/user-attachments/assets/a601df5c-2730-4706-8ff8-68b3b8e2892c' },
+  // Row 4
+  { name: 'Gemini', icon: 'https://github.com/user-attachments/assets/19ea2a49-f174-4b76-99a8-6e5ba28941dc' },
+  { name: 'CURSOR', icon: 'https://github.com/user-attachments/assets/0d08825c-ff95-432f-acd0-9c946567c622' },
+  { name: 'Org Design & Mgmt', icon: 'https://github.com/user-attachments/assets/b9ebc0c1-d61b-4735-8b13-8fe0f834ff54' },
+  { name: 'OA', icon: 'https://github.com/user-attachments/assets/78e1a74b-f896-453d-ac7f-c0ec82344cf4' },
+];
+
+function TechToolIcon({ name, icon }) {
+  return (
+    <div className="flex flex-col items-center gap-[8px]" data-name={`Tech tool: ${name}`}>
+      <div className="w-[50px] h-[50px] flex items-center justify-center">
+        <img 
+          src={icon} 
+          alt={name} 
+          className="w-full h-full object-contain"
+          onError={(e) => {
+            // 아이콘 로드 실패 시 대체 텍스트 표시
+            e.target.style.display = 'none';
+            e.target.parentElement.innerHTML = `<span class="text-2xl">${name.charAt(0)}</span>`;
+          }}
+        />
+      </div>
+      <p className="text-[14px] text-black text-center font-['Instrument_Sans:Regular',sans-serif] font-normal font-semibold" style={{ fontVariationSettings: "'wdth' 100" }}>
+        {name}
+      </p>
+    </div>
+  );
+}
+
 function NewBodyDesktop() {
   return (
-    <div className="basis-0 content-start grid grid-cols-3 gap-y-[32px] grow items-start max-w-[1200px] min-h-px min-w-px relative shrink-0" style={{ columnGap: '3px' }} data-name="New body">
-      <BrandingListDesktop />
-      <ProblemSolvingListDesktop />
-      <DataDrivenDecisionMakingListDesktop />
-      <HRManagementListDesktop />
-      <ProjectCoordinationListDesktop />
+    <div className="basis-0 content-start grid grid-cols-4 gap-x-[24px] gap-y-[32px] grow items-start max-w-[1200px] min-h-px min-w-px relative shrink-0" data-name="New body">
+      {techTools.map((tool, index) => (
+        <TechToolIcon key={index} name={tool.name} icon={tool.icon} />
+      ))}
     </div>
   );
 }
@@ -512,7 +556,7 @@ function NewContentDesktop() {
   return (
     <div className="content-stretch flex items-start relative shrink-0 w-full" data-name="New content">
       <p className="basis-0 font-['Instrument_Sans:Regular',sans-serif] font-normal grow leading-none max-w-[633px] min-h-px min-w-px relative shrink-0 text-[64px] text-black tracking-[-3.2px]" style={{ fontVariationSettings: "'wdth' 100" }}>
-        New Section
+        Tech & Tools
       </p>
       <NewBodyDesktop />
     </div>
@@ -521,7 +565,7 @@ function NewContentDesktop() {
 
 function NewSectionDesktop() {
   return (
-    <div className="relative size-full" data-name="New section">
+    <div className="relative size-full" data-name="Tech & Tools">
       <div className="flex flex-col items-center max-w-inherit size-full">
         <div className="box-border content-stretch flex flex-col gap-[30px] items-center max-w-inherit pb-[100px] pt-[67px] px-[15px] relative size-full">
           <div className="h-0 relative shrink-0 w-full" data-name="Divider">
