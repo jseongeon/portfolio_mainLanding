@@ -341,7 +341,7 @@ function IntroSection() {
 
 function BrandingListDesktop() {
   return (
-    <div className="relative shrink-0 w-full" data-name="Branding list">
+    <div className="relative shrink-0 w-full lg:w-[250px]" data-name="Branding list">
       <div className="max-w-inherit min-w-inherit size-full">
         <div className="box-border content-stretch flex flex-col font-['Instrument_Sans:Regular',sans-serif] font-normal gap-[20px] items-start max-w-inherit min-w-inherit pl-0 pr-0 py-0 relative w-full">
           <p className="leading-[1.1] relative shrink-0 text-black text-[32px] text-nowrap tracking-[-0.48px] whitespace-pre font-semibold" style={{ fontVariationSettings: "'wdth' 100" }}>
@@ -361,7 +361,7 @@ function BrandingListDesktop() {
 
 function ProblemSolvingListDesktop() {
   return (
-    <div className="relative shrink-0 w-full" data-name="Problem solving list">
+    <div className="relative shrink-0 w-full lg:w-[250px]" data-name="Problem solving list">
       <div className="max-w-inherit min-w-inherit size-full">
         <div className="box-border content-stretch flex flex-col font-['Instrument_Sans:Regular',sans-serif] font-normal gap-[20px] items-start max-w-inherit min-w-inherit pl-0 pr-0 py-0 relative w-full">
           <p className="leading-[1.1] relative shrink-0 text-black text-[32px] text-nowrap tracking-[-0.48px] whitespace-pre font-semibold" style={{ fontVariationSettings: "'wdth' 100" }}>
@@ -381,7 +381,7 @@ function ProblemSolvingListDesktop() {
 
 function DataDrivenDecisionMakingListDesktop() {
   return (
-    <div className="relative shrink-0 w-full" data-name="Data-driven decision making list">
+    <div className="relative shrink-0 w-full lg:w-[250px]" data-name="Data-driven decision making list">
       <div className="max-w-inherit min-w-inherit size-full">
         <div className="box-border content-stretch flex flex-col font-['Instrument_Sans:Regular',sans-serif] font-normal gap-[20px] items-start max-w-inherit min-w-inherit pl-0 pr-0 py-0 relative w-full">
           <p className="leading-[1.1] relative shrink-0 text-black text-[32px] text-nowrap tracking-[-0.48px] whitespace-pre font-semibold" style={{ fontVariationSettings: "'wdth' 100" }}>
@@ -401,7 +401,7 @@ function DataDrivenDecisionMakingListDesktop() {
 
 function HRManagementListDesktop() {
   return (
-    <div className="relative shrink-0 w-full" data-name="HR Management list">
+    <div className="relative shrink-0 w-full lg:w-[250px]" data-name="HR Management list">
       <div className="max-w-inherit min-w-inherit size-full">
         <div className="box-border content-stretch flex flex-col font-['Instrument_Sans:Regular',sans-serif] font-normal gap-[20px] items-start max-w-inherit min-w-inherit pl-0 pr-0 py-0 relative w-full">
           <p className="leading-[1.1] relative shrink-0 text-black text-[32px] text-nowrap tracking-[-0.48px] whitespace-pre font-semibold" style={{ fontVariationSettings: "'wdth' 100" }}>
@@ -421,7 +421,7 @@ function HRManagementListDesktop() {
 
 function ProjectCoordinationListDesktop() {
   return (
-    <div className="relative shrink-0 w-full" data-name="Project Coordination list">
+    <div className="relative shrink-0 w-full lg:w-[250px]" data-name="Project Coordination list">
       <div className="max-w-inherit min-w-inherit size-full">
         <div className="box-border content-stretch flex flex-col font-['Instrument_Sans:Regular',sans-serif] font-normal gap-[20px] items-start max-w-inherit min-w-inherit pl-0 pr-0 py-0 relative w-full">
           <p className="leading-[1.1] relative shrink-0 text-black text-[32px] text-nowrap tracking-[-0.48px] whitespace-pre font-semibold" style={{ fontVariationSettings: "'wdth' 100" }}>
@@ -456,7 +456,7 @@ function LinkContainDesktop() {
 
 function StatsBodyDesktop() {
   return (
-    <div className="basis-0 content-start grid grid-cols-3 gap-y-[32px] grow items-start max-w-[1200px] min-h-px min-w-px relative shrink-0" style={{ columnGap: '3px' }} data-name="Stats body">
+    <div className="content-start flex flex-wrap gap-x-[16px] lg:gap-x-[100px] gap-y-[32px] lg:gap-y-[77px] items-start w-full lg:max-w-[1200px] relative min-w-0" data-name="Stats body">
       <BrandingListDesktop />
       <ProblemSolvingListDesktop />
       <DataDrivenDecisionMakingListDesktop />
@@ -468,11 +468,13 @@ function StatsBodyDesktop() {
 
 function StatsContentDesktop() {
   return (
-    <div className="content-stretch flex items-start relative shrink-0 w-full" data-name="Stats content">
-      <p className="basis-0 font-['Instrument_Sans:Regular',sans-serif] font-normal grow leading-none max-w-[633px] min-h-px min-w-px relative shrink-0 text-[64px] text-black tracking-[-3.2px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+    <div className="content-stretch flex flex-col items-start gap-[100px] relative shrink-0 w-full" data-name="Stats content">
+      <p className="font-['Instrument_Sans:Regular',sans-serif] font-normal leading-none max-w-[633px] relative shrink-0 text-[64px] text-black tracking-[-3.2px] w-full" style={{ fontVariationSettings: "'wdth' 100" }}>
         Core Competencies
       </p>
-      <StatsBodyDesktop />
+      <div className="w-full">
+        <StatsBodyDesktop />
+      </div>
     </div>
   );
 }
@@ -481,7 +483,7 @@ function StatsSectionDesktop() {
   return (
     <div className="relative size-full" data-name="Stats section">
       <div className="flex flex-col items-center max-w-inherit size-full">
-        <div className="box-border content-stretch flex flex-col gap-[30px] items-center max-w-inherit pb-[100px] pt-[67px] px-[15px] relative size-full">
+        <div className="box-border content-stretch flex flex-col gap-[30px] items-center max-w-inherit pb-[100px] pt-[67px] px-[15px] relative size-full w-full overflow-hidden">
           <div className="h-0 relative shrink-0 w-full" data-name="Divider">
             <div className="absolute bottom-[-0.5px] left-0 right-0 top-[-0.5px]">
               <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 1250 1">
@@ -520,10 +522,14 @@ const techTools = [
   { name: 'OA', icon: 'https://github.com/user-attachments/assets/78e1a74b-f896-453d-ac7f-c0ec82344cf4' },
 ];
 
-function TechToolIcon({ name, icon }) {
+function TechToolIcon({ name, icon, isMobile = false }) {
+  const iconSize = isMobile ? 'w-[40px] h-[40px]' : 'w-[50px] h-[50px]';
+  const textSize = isMobile ? 'text-[12px]' : 'text-[14px]';
+  const gapSize = isMobile ? 'gap-[6px]' : 'gap-[8px]';
+  
   return (
-    <div className="flex flex-col items-center gap-[8px]" data-name={`Tech tool: ${name}`}>
-      <div className="w-[50px] h-[50px] flex items-center justify-center">
+    <div className={`flex flex-col items-center ${gapSize}`} data-name={`Tech tool: ${name}`}>
+      <div className={`${iconSize} flex items-center justify-center`}>
         <img 
           src={icon} 
           alt={name} 
@@ -531,11 +537,11 @@ function TechToolIcon({ name, icon }) {
           onError={(e) => {
             // 아이콘 로드 실패 시 대체 텍스트 표시
             e.target.style.display = 'none';
-            e.target.parentElement.innerHTML = `<span class="text-2xl">${name.charAt(0)}</span>`;
+            e.target.parentElement.innerHTML = `<span class="text-xl">${name.charAt(0)}</span>`;
           }}
         />
       </div>
-      <p className="text-[14px] text-black text-center font-['Instrument_Sans:Regular',sans-serif] font-normal font-semibold" style={{ fontVariationSettings: "'wdth' 100" }}>
+      <p className={`${textSize} text-black text-center font-['Instrument_Sans:Regular',sans-serif] font-normal font-semibold`} style={{ fontVariationSettings: "'wdth' 100" }}>
         {name}
       </p>
     </div>
@@ -563,6 +569,90 @@ function NewContentDesktop() {
   );
 }
 
+function NewBodyTablet() {
+  return (
+    <div className="basis-0 content-start grid grid-cols-3 gap-x-[24px] gap-y-[32px] grow items-start max-w-[1200px] min-h-px min-w-px relative shrink-0" data-name="New body">
+      {techTools.map((tool, index) => (
+        <TechToolIcon key={index} name={tool.name} icon={tool.icon} />
+      ))}
+    </div>
+  );
+}
+
+function NewContentTablet() {
+  return (
+    <div className="content-stretch flex items-start relative shrink-0 w-full" data-name="New content">
+      <p className="basis-0 font-['Instrument_Sans:Regular',sans-serif] font-normal grow leading-none max-w-[633px] min-h-px min-w-px relative shrink-0 text-[64px] text-black tracking-[-3.2px]" style={{ fontVariationSettings: "'wdth' 100" }}>
+        Tech & Tools
+      </p>
+      <NewBodyTablet />
+    </div>
+  );
+}
+
+function NewSectionTablet() {
+  return (
+    <div className="relative size-full" data-name="Tech & Tools">
+      <div className="flex flex-col items-center max-w-inherit size-full">
+        <div className="box-border content-stretch flex flex-col gap-[30px] items-center max-w-inherit pb-[100px] pt-[67px] px-[15px] relative size-full">
+          <div className="h-0 relative shrink-0 w-full" data-name="Divider">
+            <div className="absolute bottom-[-0.5px] left-0 right-0 top-[-0.5px]">
+              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 770 1">
+                <path d="M0 0.533333H770" id="Divider" stroke="var(--stroke-0, black)" strokeWidth="1.06667" />
+              </svg>
+            </div>
+          </div>
+          <NewContentTablet />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function NewBodyMobile() {
+  return (
+    <div className="basis-0 content-start grid grid-cols-2 gap-x-[16px] gap-y-[24px] grow items-start max-w-[1200px] min-h-px min-w-px relative shrink-0" data-name="New body">
+      {techTools.map((tool, index) => (
+        <TechToolIcon key={index} name={tool.name} icon={tool.icon} isMobile={true} />
+      ))}
+    </div>
+  );
+}
+
+function NewContentMobile() {
+  return (
+    <div className="relative shrink-0 w-full" data-name="New content">
+      <div className="size-full">
+        <div className="box-border content-stretch flex flex-col gap-[16px] items-start px-[16px] py-0 relative w-full">
+          <p className="font-['Instrument_Sans:Regular',sans-serif] font-normal leading-none max-w-[633px] relative shrink-0 text-[64px] text-black tracking-[-3.2px] w-full" style={{ fontVariationSettings: "'wdth' 100" }}>
+            Tech & Tools
+          </p>
+          <NewBodyMobile />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function NewSectionMobile() {
+  return (
+    <div className="relative size-full" data-name="Tech & Tools">
+      <div className="flex flex-col items-center max-w-inherit size-full">
+        <div className="box-border content-stretch flex flex-col gap-[30px] items-center max-w-inherit pb-[100px] pt-[67px] px-[15px] relative size-full">
+          <div className="h-0 relative shrink-0 w-full" data-name="Divider">
+            <div className="absolute bottom-[-0.5px] left-0 right-0 top-[-0.5px]">
+              <svg className="block size-full" fill="none" preserveAspectRatio="none" viewBox="0 0 345 1">
+                <path d="M0 0.533333H345" id="Divider" stroke="var(--stroke-0, black)" strokeWidth="1.06667" />
+              </svg>
+            </div>
+          </div>
+          <NewContentMobile />
+        </div>
+      </div>
+    </div>
+  );
+}
+
 function NewSectionDesktop() {
   return (
     <div className="relative size-full" data-name="Tech & Tools">
@@ -580,6 +670,17 @@ function NewSectionDesktop() {
       </div>
     </div>
   );
+}
+
+function NewSection() {
+  const { width } = useActiveBreakpoint();
+  if (width < 800) {
+    return <NewSectionMobile />;
+  }
+  if (width < 1280) {
+    return <NewSectionTablet />;
+  }
+  return <NewSectionDesktop />;
 }
 
 function BrandingListTablet() {
@@ -639,7 +740,7 @@ function LinkContainTablet() {
 
 function StatsBodyTablet() {
   return (
-    <div className="basis-0 content-start flex flex-wrap gap-0 grow items-start max-w-[633px] min-h-px min-w-px relative shrink-0" data-name="Stats body">
+    <div className="basis-0 content-start flex flex-wrap gap-[16px] grow items-start max-w-[633px] min-h-px min-w-px relative shrink-0" data-name="Stats body">
       <BrandingListTablet />
       <ProblemSolvingListTablet />
     </div>
@@ -648,7 +749,7 @@ function StatsBodyTablet() {
 
 function StatsContentTablet() {
   return (
-    <div className="content-stretch flex items-start relative shrink-0 w-full" data-name="Stats content">
+    <div className="content-stretch flex flex-col lg:flex-row items-start gap-[20px] lg:gap-0 relative shrink-0 w-full" data-name="Stats content">
       <p className="basis-0 font-['Instrument_Sans:Regular',sans-serif] font-normal grow leading-none max-w-[633px] min-h-px min-w-px relative shrink-0 text-[64px] text-black tracking-[-3.2px]" style={{ fontVariationSettings: "'wdth' 100" }}>
         Our Services
       </p>
@@ -771,9 +872,7 @@ function StatsSection() {
   if (width < 800) {
     return <StatsSectionMobile />;
   }
-  if (width < 1280) {
-    return <StatsSectionTablet />;
-  }
+  // 800px 이상에서는 Desktop 버전 사용 (Core Competencies 표시)
   return <StatsSectionDesktop />;
 }
 
@@ -2847,7 +2946,7 @@ function App() {
       <NavHeader />
       <IntroSection />
       <StatsSection />
-      <NewSectionDesktop />
+      <NewSection />
       <StatsContent />
       <AwardsSection />
       <OurTeamSection />
