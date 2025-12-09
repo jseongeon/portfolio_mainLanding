@@ -1,0 +1,11 @@
+{
+  "name": "portfolio-landing",
+  "version": "1.0.0",
+  "description": "Portfolio Landing Page",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "devDependencies": {}
+}
+
